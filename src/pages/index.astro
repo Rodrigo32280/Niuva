@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import audioSrc from "../../public/musica.mp3";
 
 const pageTitle = "Niuva";
 ---
@@ -56,4 +57,9 @@ const pageTitle = "Niuva";
   <script>
     import "../scripts/loveMessages.js";
   </script>
+  
+  <audio autoplay loop>
+    <source src={audioSrc} type="audio/mp3">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
 </BaseLayout>
